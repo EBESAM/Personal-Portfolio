@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/450db348ce.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+           <div class="container">
+            <nav>
+                <img src="images/logo.JPEG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>Hello, I'm <span>EBESAM</span><br>from Chennai</h1>
+            </div>
+           </div> 
+        </div>
+        <!--- -------------about------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.JPEG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm currently pursuing my bachelors degree in Computer Science and Engineering with a CGPA of 7.77</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java and Python</span><br>Programming language</li>
+                                <li><span>MySQL</span><br>To handle the database</li>
+                                <li><span>Web Development</span><br>Designing WebApp interfaces using HTML, CSS and JavaScript.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Fresher</span><br>As a fresher, I've done few projects to gain knowledge on my skills.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - Current</span><br>Bachelors in Computer Science Engineering at VTMT</li>
+                                <li><span>2019-2020</span><br>HSLC</li>
+                                <li><span>2017-2018</span><br>SSLC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------services------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Achievements</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming in Java - NPTEL</h2>
+                        <p>Learned and completed an excellent course on programming in java by NPTEL offered by IIT - Kharagpur.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Exploring Cybersecurity: Hacking with a Hacker</h2>
+                        <p>d more about investigating cybersecurity by attending a workshop held by TG Cyberlabs at Anna University's College of Engineering.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Career Skills by TCS iON</h2>
+                        <p>Gained knowledge on career skills like soft skill development that industry demands, corporate etiquette
+                            etc. which is conducted by TCS iON.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-------------portfolio------------>
+        <div id="'portfolio">
+            <div class="cotainer">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Presentation with hand gesture control</h3>
+                            <p>Experience the future of presentations with my innovative project: 'Presentation with Hand Gesture Control.' Using cutting-edge technologies such as Python, TensorFlow, OpenCV, MediaPipe, and Computer Vision, I've developed a seamless interface that allows presenters to navigate slides and interact with content using intuitive hand gestures. Say goodbye to traditional clickers and hello to a dynamic and engaging presentation experience. Explore how this revolutionary approach enhances audience engagement and sets a new standard for interactive presentations.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Personal portfolio</h3>
+                            <p>Discover my journey and expertise through my personalized portfolio website crafted with HTML, CSS, and JavaScript. Explore a showcase of my skills, projects, achievements, and more in a visually captivating and user-friendly interface. Dive into my professional journey and see firsthand how my passion for technology and creativity come together to create impactful digital experiences.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>CampusBot: College Information Assistant</h3>
+                            <p>Introducing CampusBot: Your College Information Assistant. As a culmination of my academic journey, I've developed an advanced chatbot using Large Language Models (LLMs) to streamline college inquiries. CampusBot is your go-to resource for accessing vital information such as fees structure, faculty details, student resources, hostel facilities, placement assistance, lab amenities, and more. Seamlessly integrated with natural language processing capabilities, CampusBot offers a personalized and efficient way to navigate through the intricacies of college life. Experience the future of campus inquiries with CampusBot, your trusted companion for all things college-related.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+<!----------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ebenezersamuel2050@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9566152445</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ebenezersamuel2050/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/EBESAM"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Ebesam.</p>
+    </div>
+</div>
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+           
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQblypyYkzqOZumkc3XNa4fJlXpDI4-VIgGHpKaVWNkrxE4soBjpN4LeodIqTLjPfE6g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
